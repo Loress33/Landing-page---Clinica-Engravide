@@ -1,0 +1,137 @@
+.quick-form {
+  background: var(--color-accent-cream-dark);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 40px 44px;
+}
+
+.quick-form__text {
+  margin-bottom: 28px;
+}
+
+.quick-form__text h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: var(--color-primary-dark);
+}
+
+.quick-form__text p {
+  font-size: 14px;
+  color: var(--color-text-gray);
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.quick-form__row {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.quick-form__fields {
+  flex: 1 1 480px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(110px, 1fr));
+  gap: 16px;
+}
+
+.quick-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.quick-form__field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-gray);
+  line-height: 1.2;
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.quick-form__field input,
+.quick-form__field select {
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background: var(--color-bg-white);
+  transition: border-color 0.2s ease;
+  width: 100%;
+}
+
+.quick-form__field input:focus,
+.quick-form__field select:focus {
+  border-color: var(--color-secondary);
+}
+
+.quick-form__submit {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.quick-form__label-spacer {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  min-height: 2.4em;
+  visibility: hidden;
+}
+
+.quick-form .btn {
+  padding: 12px 26px;
+  font-size: 14.5px;
+  white-space: nowrap;
+  min-height: 46px;
+}
+
+.quick-form__disclaimer {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .quick-form__fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-form__submit {
+    flex: 1 1 100%;
+  }
+
+  .quick-form__label-spacer {
+    display: none;
+  }
+
+  .quick-form .btn {
+    width: 100%;
+    padding: 15px 26px;
+  }
+}
+
+@media (max-width: 560px) {
+  .quick-form {
+    padding: 28px 24px;
+    border-radius: var(--radius-md);
+  }
+
+  .quick-form__fields {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-form__disclaimer {
+    display: block;
+    margin-top: 16px;
+    font-size: 11.5px;
+    color: var(--color-text-gray);
+    text-align: center;
+  }
+}

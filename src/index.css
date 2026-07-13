@@ -1,0 +1,241 @@
+/* =========================================================================
+   DESIGN TOKENS
+   Paleta inspirada no site atual da clínica (ameixa/mauve + creme).
+   Se quiser ajustar as cores, mude só as variáveis abaixo — o resto do
+   site se atualiza sozinho.
+   ========================================================================= */
+:root {
+  /* Cores principais */
+  --color-primary: #5b3a4a;        /* ameixa profundo — títulos, fundo escuro */
+  --color-primary-dark: #3d2530;   /* ameixa mais escuro — hover, textos fortes */
+  --color-primary-light: #7a5568;  /* ameixa claro — detalhes, gradientes */
+  --color-secondary: #c08a93;      /* rosa empoeirado — acentos, ícones */
+  --color-accent-cream: #f7efe6;   /* creme — botões, cards de destaque */
+  --color-accent-cream-dark: #ecdccb; /* creme escuro — hover de botões creme */
+
+  /* Fundos */
+  --color-bg-soft: #fdf6f4;        /* seções alternadas, levemente rosado */
+  --color-bg-white: #ffffff;
+
+  /* Texto */
+  --color-text-dark: #3a2a30;
+  --color-text-gray: #8a7880;
+  --color-text-on-dark: #f7efe6;
+
+  /* Utilidade */
+  --color-whatsapp: #25d366;
+  --color-border: #ece0e2;
+
+  /* Tipografia */
+  --font-display: "Raleway", "Comfortaa", sans-serif;
+  --font-body: "Open Sans", "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Layout */
+  --container-width: 1180px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 12px 32px rgba(61, 37, 48, 0.12);
+  --shadow-card: 0 6px 20px rgba(61, 37, 48, 0.08);
+
+  --section-padding: 96px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 56px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-dark);
+  background: var(--color-bg-white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--color-primary-dark);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: var(--section-padding) 0;
+}
+
+.section--soft {
+  background: var(--color-bg-soft);
+}
+
+.section--dark {
+  background: var(--color-primary);
+  color: var(--color-text-on-dark);
+}
+
+.section--dark h2,
+.section--dark h3 {
+  color: var(--color-text-on-dark);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--color-text-gray);
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 56px;
+}
+
+.section-header .section-subtitle {
+  margin: 0 auto;
+}
+
+/* Botões reutilizados via componente Button, estilos base aqui */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 16px 32px;
+  border-radius: var(--radius-pill);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn--primary {
+  background: var(--color-bg-white);
+  color: var(--color-primary-dark);
+  box-shadow: var(--shadow-soft);
+}
+
+.btn--primary:hover {
+  background: var(--color-bg-soft);
+}
+
+.btn--outline {
+  background: transparent;
+  color: inherit;
+  border: 1.5px solid currentColor;
+}
+
+.btn--whatsapp {
+  background: var(--color-whatsapp);
+  color: #ffffff;
+}
+
+.btn--whatsapp:hover {
+  background: #1fb959;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+/* Use esta classe em qualquer <img> que substituir um ImagePlaceholder,
+   para manter o mesmo cantos arredondados + sombra do placeholder. */
+.photo {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  object-fit: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Foco visível para acessibilidade */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,27 @@
+.final-cta {
+  background: radial-gradient(120% 160% at 50% 0%, var(--color-primary-light) 0%, transparent 55%),
+    linear-gradient(150deg, var(--color-primary-dark), var(--color-primary));
+}
+
+.final-cta__inner {
+  text-align: center;
+  max-width: 640px;
+}
+
+.final-cta__inner .section-title {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.final-cta__inner p {
+  font-size: 17px;
+  opacity: 0.85;
+  margin-bottom: 34px;
+}
+
+.final-cta__actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}

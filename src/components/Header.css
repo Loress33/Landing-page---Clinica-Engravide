@@ -1,0 +1,136 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid transparent;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.header--scrolled {
+  box-shadow: 0 4px 20px rgba(61, 37, 48, 0.08);
+  border-color: var(--color-border);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 84px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__logo span {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.header__logo strong {
+  font-family: var(--font-display);
+  font-size: 19px;
+  letter-spacing: 0.03em;
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.header__logo small {
+  font-size: 11px;
+  color: var(--color-text-gray);
+  letter-spacing: 0.04em;
+}
+
+.header__logo-image {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav a {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  transition: color 0.2s ease;
+}
+
+.header__nav a:hover {
+  color: var(--color-primary);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__actions .btn {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.header__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  width: 26px;
+}
+
+.header__burger span {
+  height: 2px;
+  width: 100%;
+  background: var(--color-primary-dark);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.header__burger--open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.header__burger--open span:nth-child(2) {
+  opacity: 0;
+}
+.header__burger--open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 900px) {
+  .header__nav {
+    position: fixed;
+    top: 84px;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-white);
+    border-bottom: 1px solid var(--color-border);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .header__nav--open {
+    max-height: 400px;
+  }
+
+  .header__nav ul {
+    flex-direction: column;
+    padding: 20px 24px;
+    gap: 18px;
+  }
+
+  .header__actions .btn {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+}
