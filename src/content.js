@@ -204,22 +204,25 @@ export const instagramVideos = {
   ctaHref: site.instagramUrl,
   items: [
     {
-      title: "Quanto tempo tentar engravidar antes de procurar ajuda",
+      title: "Sinais do corpo que podem indicar dificuldade para engravidar",
       description:
-        "Quando vale observar mais um pouco e quando já é hora de buscar uma avaliação especializada.",
-      src: "/Muitas mulheres associam a demora para engravidar à ideia de que a maternidade talvez não aconte.mp4",
+        "Nem sempre o corpo fala de forma direta, mas alguns sinais merecem investigação quando a gravidez demora a acontecer.",
+      src: "/Nem sempre os sinais que o corpo apresenta são vistos como algo importante. Muitas mulheres pass.mp4",
+      poster: "/Nem sempre os sinais que o corpo apresenta são vistos como algo importante. Muitas mulheres pass.jpg",
     },
     {
-      title: "Endometriose: sinais que merecem atenção",
+      title: "Infertilidade precisa ser investigada em mulher e homem",
       description:
-        "Entenda por que a endometriose pode passar despercebida e como ela impacta a fertilidade.",
-      src: "/Muitas mulheres convivem por anos com sintomas intensos acreditando que isso faz parte da vida. .mp4",
+        "A infertilidade não é uma culpa de um lado só: a investigação precisa olhar o casal como um todo.",
+      src: "/Quando a gravidez não acontece, é comum que toda a atenção se volte para a mulher. Mas a fertili.mp4",
+      poster: "/Quando a gravidez não acontece, é comum que toda a atenção se volte para a mulher. Mas a fertili.jpg",
     },
     {
-      title: "Escolhas do dia a dia e fertilidade",
+      title: "A exaustão emocional de quem tenta engravidar",
       description:
-        "Pequenas escolhas podem influenciar a saúde reprodutiva e vale olhar isso com contexto clínico.",
-      src: "/Pequenas escolhas do dia a dia têm um impacto muito maior do que parece quando falamos sobre ger.mp4",
+        "Quando a gravidez não vem, o desgaste emocional cresce e esse impacto também precisa ser acolhido.",
+      src: "/Quando falamos sobre fertilidade, é comum pensar apenas em exames, tratamentos e resultados. Mas.mp4",
+      poster: "/Quando falamos sobre fertilidade, é comum pensar apenas em exames, tratamentos e resultados. Mas.jpg",
     },
   ],
 };
