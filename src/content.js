@@ -74,7 +74,7 @@ export const authority = {
     "Milhares de pacientes acompanhadas",
     "Atualização constante baseada nas principais sociedades científicas internacionais",
   ],
-  badges: ["CRM", "RQE", "Certificações"], // EDITAR: substituir por selos/certificações reais
+  badges: [site.crm, site.rqe],
   photoLabel: "Fotos profissionais da Dra. Renata", // EDITAR
   photoSrc: "/Dra Renata-(9 of 16).jpg",
 };
