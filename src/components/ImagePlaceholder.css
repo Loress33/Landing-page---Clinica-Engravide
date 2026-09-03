@@ -12,6 +12,14 @@
   padding: 20px;
 }
 
+.image-placeholder--photo {
+  display: block;
+  padding: 0;
+  background: var(--color-bg-soft);
+  object-fit: cover;
+  object-position: center;
+}
+
 .image-placeholder span {
   font-size: 13px;
   font-weight: 600;
