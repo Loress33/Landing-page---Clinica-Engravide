@@ -9,13 +9,16 @@
   background: var(--color-bg-soft);
   border-radius: var(--radius-md);
   padding: 0;
-  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
   border: 1px solid var(--color-border);
 }
 
 .services__card:hover {
   transform: translateY(-4px);
   background: var(--color-accent-cream);
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-card);
 }
 
 .services__card[open] {
@@ -40,12 +43,21 @@
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  background: var(--color-primary);
+  background: linear-gradient(
+    145deg,
+    var(--color-primary-light),
+    var(--color-primary-dark)
+  );
   color: var(--color-accent-cream);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  transition: transform 0.22s ease;
+}
+
+.services__card:hover .services__icon {
+  transform: scale(1.08);
 }
 
 .services__heading {

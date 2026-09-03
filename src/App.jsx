@@ -11,8 +11,11 @@ import FAQ from "./components/FAQ";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import useScrollReveal from "./hooks/useScrollReveal";
 
 export default function App() {
+  useScrollReveal();
+
   return (
     <>
       <Header />
