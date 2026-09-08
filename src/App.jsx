@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Authority from "./components/Authority";
@@ -33,6 +34,7 @@ export default function App() {
       </main>
       <Footer />
       <WhatsAppButton />
+      <SpeedInsights />
     </>
   );
 }
