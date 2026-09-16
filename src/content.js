@@ -40,7 +40,7 @@ export const hero = {
   primaryButton: "Agendar consulta",
   secondaryButton: "Falar pelo WhatsApp",
   photoLabel: "Foto profissional da Dra. Renata", // EDITAR: substituir pelo componente de imagem real
-  photoSrc: "/Dra Renata-(1 of 16).jpg",
+  photoSrc: "/dra-renata-hero.webp",
 };
 
 export const quickForm = {
@@ -76,7 +76,7 @@ export const authority = {
   ],
   badges: [site.crm, site.rqe],
   photoLabel: "Fotos profissionais da Dra. Renata", // EDITAR
-  photoSrc: "/Dra Renata-(9 of 16).jpg",
+  photoSrc: "/dra-renata-autoridade.webp",
 };
 
 export const symptoms = {
@@ -208,21 +208,21 @@ export const instagramVideos = {
       description:
         "Nem sempre o corpo fala de forma direta, mas alguns sinais merecem investigação quando a gravidez demora a acontecer.",
       src: "/Nem sempre os sinais que o corpo apresenta são vistos como algo importante. Muitas mulheres pass.mp4",
-      poster: "/Nem sempre os sinais que o corpo apresenta são vistos como algo importante. Muitas mulheres pass.jpg",
+      poster: "/poster-sinais.webp",
     },
     {
       title: "Infertilidade precisa ser investigada em mulher e homem",
       description:
         "A infertilidade não é uma culpa de um lado só: a investigação precisa olhar o casal como um todo.",
       src: "/Quando a gravidez não acontece, é comum que toda a atenção se volte para a mulher. Mas a fertili.mp4",
-      poster: "/Quando a gravidez não acontece, é comum que toda a atenção se volte para a mulher. Mas a fertili.jpg",
+      poster: "/poster-fator-masculino.webp",
     },
     {
       title: "A exaustão emocional de quem tenta engravidar",
       description:
         "Quando a gravidez não vem, o desgaste emocional cresce e esse impacto também precisa ser acolhido.",
       src: "/Quando falamos sobre fertilidade, é comum pensar apenas em exames, tratamentos e resultados. Mas.mp4",
-      poster: "/Quando falamos sobre fertilidade, é comum pensar apenas em exames, tratamentos e resultados. Mas.jpg",
+      poster: "/poster-acolhimento.webp",
     },
   ],
 };
@@ -235,6 +235,7 @@ export const testimonials = {
     title: "Vídeo depoimento",
     description: "Um relato em vídeo para você sentir como é a experiência de cuidado na clínica.",
     src: "/Depoimento.mp4",
+    poster: "/poster-depoimento.webp",
     ctaLabel: "Ver no YouTube",
     ctaHref: "https://www.youtube.com/watch?v=SAQzJIZaahs",
   },

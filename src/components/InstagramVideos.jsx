@@ -19,7 +19,7 @@ export default function InstagramVideos() {
                 <video
                   controls
                   playsInline
-                  preload="metadata"
+                  preload="none"
                   poster={encodeURI(video.poster)}
                   src={encodeURI(video.src)}
                 />

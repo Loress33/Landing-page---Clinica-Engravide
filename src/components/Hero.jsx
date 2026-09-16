@@ -21,7 +21,7 @@ export default function Hero() {
         </div>
 
         <div className="hero__media">
-          <ImagePlaceholder label={hero.photoLabel} src={hero.photoSrc} ratio="4 / 5" />
+          <ImagePlaceholder label={hero.photoLabel} src={hero.photoSrc} ratio="4 / 5" priority />
         </div>
       </div>
 

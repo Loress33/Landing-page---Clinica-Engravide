@@ -14,7 +14,13 @@ export default function Testimonials() {
 
         <div className="testimonials__featured-video">
           <div className="testimonials__video-player">
-            <video controls playsInline preload="metadata" src={encodeURI(testimonials.featuredVideo.src)} />
+            <video
+              controls
+              playsInline
+              preload="none"
+              poster={encodeURI(testimonials.featuredVideo.poster)}
+              src={encodeURI(testimonials.featuredVideo.src)}
+            />
           </div>
 
           <div className="testimonials__video-copy">

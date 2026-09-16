@@ -10,6 +10,19 @@
       content="Investigação completa da infertilidade, tratamentos personalizados e acompanhamento humanizado em todas as etapas da jornada reprodutiva. Agende sua consulta."
     />
 
+    <!--
+      Foto do Hero: é o elemento LCP da página. Como o React só cria a <img>
+      depois que o JS roda, este preload faz o navegador começar a baixá-la
+      imediatamente, em paralelo com o bundle. Se trocar a foto do topo,
+      atualize o href aqui também (e em src/content.js).
+    -->
+    <link
+      rel="preload"
+      as="image"
+      href="/dra-renata-hero.webp"
+      fetchpriority="high"
+    />
+
     <!-- Google Fonts: Raleway (títulos) + Open Sans (texto) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

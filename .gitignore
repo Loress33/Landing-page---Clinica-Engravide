@@ -2,3 +2,6 @@ node_modules
 dist
 .DS_Store
 *.local
+
+# Fotos/vídeos originais em alta resolução (masters locais, não vão para o deploy)
+_originais
