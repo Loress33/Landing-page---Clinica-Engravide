@@ -1,166 +1,160 @@
 .hero {
-  position: relative;
-  background: radial-gradient(
-      120% 140% at 15% 0%,
-      var(--color-primary-light) 0%,
-      transparent 55%
-    ),
-    linear-gradient(150deg, var(--color-primary-dark) 0%, var(--color-primary) 65%);
-  color: var(--color-text-on-dark);
+  background: var(--mist);
   overflow: hidden;
-  padding-top: 64px;
-}
-
-/* Brilho suave que flutua no fundo do hero */
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 460px;
-  height: 460px;
-  right: -120px;
-  bottom: -160px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(192, 138, 147, 0.35) 0%,
-    transparent 70%
-  );
-  filter: blur(20px);
-  animation: hero-float 14s ease-in-out infinite;
-  pointer-events: none;
-}
-
-@keyframes hero-float {
-  0%,
-  100% {
-    transform: translate(0, 0) scale(1);
-  }
-  50% {
-    transform: translate(-32px, -26px) scale(1.08);
-  }
 }
 
 .hero__inner {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 56px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 72px;
   align-items: center;
-  padding-top: 56px;
-  padding-bottom: 64px;
-  position: relative;
-  z-index: 1;
+  padding-top: 72px;
+  padding-bottom: 80px;
 }
 
-.hero__text > * {
-  animation: hero-enter 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
-}
-.hero__text > *:nth-child(1) { animation-delay: 0.05s; }
-.hero__text > *:nth-child(2) { animation-delay: 0.14s; }
-.hero__text > *:nth-child(3) { animation-delay: 0.23s; }
-.hero__text > *:nth-child(4) { animation-delay: 0.32s; }
-
-.hero__media {
-  animation: hero-enter 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
-}
-
-@keyframes hero-enter {
-  from {
-    opacity: 0;
-    transform: translateY(22px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.eyebrow--light {
-  color: var(--color-accent-cream);
-  opacity: 0.85;
+.hero__kicker {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--gold-text);
+  margin-bottom: 24px;
 }
 
 .hero__title {
-  color: #ffffff;
-  font-size: clamp(30px, 4.4vw, 52px);
-  margin-bottom: 22px;
+  font-size: var(--fs-h1);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin-bottom: 28px;
 }
 
 .hero__subtitle {
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--color-text-on-dark);
-  opacity: 0.88;
-  max-width: 480px;
-  margin-bottom: 34px;
+  font-size: var(--fs-lead);
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 30em;
+  margin-bottom: 40px;
 }
 
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
 }
 
+/* ---------- Retrato oval + anel ---------- */
 .hero__media {
-  position: relative;
+  justify-self: center;
+  width: 100%;
+  max-width: 420px;
 }
 
-.hero__media::before {
-  content: "";
-  position: absolute;
-  inset: -24px -24px auto auto;
-  width: 220px;
-  height: 220px;
-  border: 1.5px solid rgba(247, 239, 230, 0.35);
+.hero__oocyte {
+  position: relative;
+  padding: 18px;
+}
+
+.hero__photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 22%;
   border-radius: 50%;
-  z-index: 0;
+  background: var(--mist-deep);
 }
 
-.hero__media::after {
-  content: "";
+.hero__ring {
   position: absolute;
-  left: -18px;
-  bottom: -18px;
-  width: 130px;
-  height: 130px;
-  border-radius: var(--radius-lg);
-  background: linear-gradient(
-    135deg,
-    var(--color-secondary),
-    transparent 70%
-  );
-  opacity: 0.55;
-  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
 }
 
-.hero__media .image-placeholder {
-  position: relative;
-  z-index: 1;
-  box-shadow: 0 30px 60px rgba(30, 16, 22, 0.4);
-  outline: 6px solid rgba(247, 239, 230, 0.12);
-  outline-offset: -6px;
+.hero__ring ellipse {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: ring-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.3s forwards;
 }
 
+/* Pequeno corpúsculo polar encostado no anel */
+.hero__polar-body {
+  position: absolute;
+  top: 11%;
+  right: 8%;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  background: var(--mist);
+  opacity: 0;
+  animation: polar-in 0.6s ease 1.9s forwards;
+}
+
+@keyframes ring-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes polar-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__ring ellipse {
+    stroke-dashoffset: 0;
+  }
+  .hero__polar-body {
+    opacity: 1;
+  }
+}
+
+.hero__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+  margin-top: 20px;
+}
+
+.hero__caption strong {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h3);
+  color: var(--plum-ink);
+}
+
+.hero__caption span {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+}
+
+/* ---------- Formulário ---------- */
 .hero__form-wrap {
-  position: relative;
-  margin-top: -36px;
-  padding-bottom: 72px;
-  z-index: 2;
-  scroll-margin-top: 100px;
+  padding-bottom: 88px;
+  scroll-margin-top: 96px;
 }
 
 @media (max-width: 900px) {
   .hero__inner {
     grid-template-columns: 1fr;
-    padding-bottom: 48px;
-    text-align: left;
+    gap: 48px;
+    padding-top: 48px;
+    padding-bottom: 56px;
   }
 
   .hero__media {
-    max-width: 320px;
+    max-width: 300px;
   }
 
   .hero__form-wrap {
-    margin-top: -24px;
-    padding-bottom: 56px;
+    padding-bottom: 64px;
   }
 }

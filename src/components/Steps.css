@@ -1,83 +1,93 @@
 .steps__timeline {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 32px;
+}
+
+/* Linha dourada que liga os embriões */
+.steps__timeline::before {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 44px;
+  right: 10%;
+  height: 1px;
+  background: var(--gold);
 }
 
 .steps__item {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 18px;
-  text-align: left;
-  padding: 24px 22px 22px;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  background: var(--color-bg);
-  box-shadow: var(--shadow-soft);
 }
 
-.steps__circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
+.steps__embryo {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  margin-bottom: 28px;
+  background: var(--porcelain);
   border-radius: 50%;
-  background: linear-gradient(
-    145deg,
-    var(--color-primary-light),
-    var(--color-primary-dark)
-  );
-  color: var(--color-accent-cream);
-  font-family: var(--font-display);
-  font-size: 19px;
-  font-weight: 600;
-  box-shadow: 0 0 0 6px var(--color-bg-soft);
-  transition: transform 0.22s ease;
 }
 
-.steps__item:hover .steps__circle {
-  transform: scale(1.08);
+.steps__zona {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 1.2;
 }
 
-.steps__body {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.steps__cell {
+  fill: var(--mist);
+  stroke: var(--plum);
+  stroke-width: 1.1;
 }
 
 .steps__label {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-secondary);
-}
-
-.steps__item h3 {
-  font-size: 16px;
+  font-size: var(--fs-small);
   font-weight: 600;
-  color: var(--color-primary-dark);
-  line-height: 1.4;
+  color: var(--gold-text);
+  margin-bottom: 8px;
 }
 
-.steps__item p {
-  font-size: 14px;
-  color: var(--color-text-gray);
-  line-height: 1.65;
+.steps__body h3 {
+  font-size: var(--fs-h3);
+  margin-bottom: 10px;
 }
 
-@media (max-width: 900px) {
-  .steps__timeline {
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-  }
+.steps__body p:not(.steps__label) {
+  font-size: 16px;
+  color: var(--text-muted);
 }
 
-@media (max-width: 520px) {
+@media (max-width: 960px) {
   .steps__timeline {
     grid-template-columns: 1fr;
+    gap: 36px;
+    max-width: 560px;
+  }
+
+  .steps__timeline::before {
+    top: 36px;
+    bottom: 36px;
+    left: 36px;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+
+  .steps__item {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+
+  .steps__embryo {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 0;
+  }
+
+  .steps__body {
+    padding-top: 6px;
   }
 }

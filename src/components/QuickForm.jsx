@@ -35,7 +35,7 @@ export default function QuickForm() {
   return (
     <form className="quick-form" onSubmit={handleSubmit}>
       <div className="quick-form__text">
-        <h3>{quickForm.title}</h3>
+        <h2>{quickForm.title}</h2>
         <p>{quickForm.subtitle}</p>
       </div>
 
@@ -104,16 +104,12 @@ export default function QuickForm() {
         </div>
 
         <div className="quick-form__submit">
-          <span className="quick-form__label-spacer" aria-hidden="true">
-            &nbsp;
-          </span>
           <button type="submit" className="btn btn--primary">
             {quickForm.submitLabel}
           </button>
+          <span className="quick-form__disclaimer">{quickForm.disclaimer}</span>
         </div>
       </div>
-
-      <span className="quick-form__disclaimer">{quickForm.disclaimer}</span>
     </form>
   );
 }

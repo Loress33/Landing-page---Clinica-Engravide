@@ -4,12 +4,16 @@ import "./InstagramVideos.css";
 
 export default function InstagramVideos() {
   return (
-    <section id="videos" className="section section--soft instagram-videos">
+    <section id="videos" className="section section--mist instagram-videos">
       <div className="container">
-        <div className="section-header">
-          <span className="eyebrow">{instagramVideos.eyebrow}</span>
-          <h2 className="section-title">{instagramVideos.title}</h2>
-          <p className="section-subtitle">{instagramVideos.subtitle}</p>
+        <div className="instagram-videos__head">
+          <div className="section-header">
+            <h2 className="section-title">{instagramVideos.title}</h2>
+            <p className="section-subtitle">{instagramVideos.subtitle}</p>
+          </div>
+          <Button href={instagramVideos.ctaHref} variant="outline" target="_blank" rel="noopener noreferrer">
+            {instagramVideos.ctaLabel}
+          </Button>
         </div>
 
         <div className="instagram-videos__grid">
@@ -22,22 +26,13 @@ export default function InstagramVideos() {
                   preload="none"
                   poster={encodeURI(video.poster)}
                   src={encodeURI(video.src)}
+                  aria-label={video.title}
                 />
               </div>
-
-              <div className="instagram-videos__content">
-                <h3>{video.title}</h3>
-                <p>{video.description}</p>
-                <p className="instagram-videos__note">Use os controles do player para assistir.</p>
-              </div>
+              <h3>{video.title}</h3>
+              <p>{video.description}</p>
             </article>
           ))}
-        </div>
-
-        <div className="instagram-videos__footer">
-          <Button href={instagramVideos.ctaHref} variant="outline" target="_blank" rel="noopener noreferrer">
-            {instagramVideos.ctaLabel}
-          </Button>
         </div>
       </div>
     </section>
