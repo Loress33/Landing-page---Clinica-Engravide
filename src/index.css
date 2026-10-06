@@ -1,50 +1,54 @@
 /* =========================================================================
    DESIGN TOKENS
-   Paleta inspirada no site atual da clínica (ameixa/mauve + creme).
-   Se quiser ajustar as cores, mude só as variáveis abaixo — o resto do
-   site se atualiza sozinho.
+   Paleta tirada do próprio retrato da Dra. Renata: o azul-névoa do tricô e
+   das paredes da clínica, o ameixa da marca e o dourado das joias.
+   Para ajustar cores, mude só as variáveis abaixo.
    ========================================================================= */
 :root {
-  /* Cores principais */
-  --color-primary: #5b3a4a;        /* ameixa profundo — títulos, fundo escuro */
-  --color-primary-dark: #3d2530;   /* ameixa mais escuro — hover, textos fortes */
-  --color-primary-light: #7a5568;  /* ameixa claro — detalhes, gradientes */
-  --color-secondary: #c08a93;      /* rosa empoeirado — acentos, ícones */
-  --color-accent-cream: #f7efe6;   /* creme — botões, cards de destaque */
-  --color-accent-cream-dark: #ecdccb; /* creme escuro — hover de botões creme */
+  /* Cores */
+  --mist: #e4ebee;          /* azul-névoa — fundo do topo e seções alternadas */
+  --mist-deep: #c9d5da;     /* névoa mais densa — bordas de campos, divisórias */
+  --porcelain: #f8fafa;     /* fundo principal */
+  --plum-ink: #2a1c27;      /* ameixa noturno — títulos, seções escuras */
+  --plum: #5b3a4a;          /* ameixa da marca — botões */
+  --plum-soft: #7a5568;     /* hover / detalhes */
+  --gold: #a47a2e;          /* dourado — anéis, linhas, ícones */
+  --gold-text: #7f5d1d;     /* dourado legível em texto pequeno sobre claro */
+  --gold-light: #d9b978;    /* dourado sobre fundo escuro */
 
-  /* Fundos */
-  --color-bg-soft: #fdf6f4;        /* seções alternadas, levemente rosado */
-  --color-bg-white: #ffffff;
+  --text: #3b2f38;
+  --text-muted: #655862;
+  --text-on-dark: #efe9ee;
+  --text-on-dark-muted: #c2b5bf;
+  --line: rgba(42, 28, 39, 0.14);
+  --line-on-dark: rgba(239, 233, 238, 0.18);
 
-  /* Texto */
-  --color-text-dark: #3a2a30;
-  --color-text-gray: #8a7880;
-  --color-text-on-dark: #f7efe6;
-
-  /* Utilidade */
-  --color-whatsapp: #25d366;
-  --color-border: #ece0e2;
+  --whatsapp: #1fa855;      /* verde mais fechado para texto branco legível */
 
   /* Tipografia */
-  --font-display: "Raleway", "Comfortaa", sans-serif;
-  --font-body: "Open Sans", "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Gloock", "Georgia", serif;
+  --font-body: "Albert Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  /* Escala tipográfica (razão ~1.25, base 17px) */
+  --fs-small: 14px;
+  --fs-body: 17px;
+  --fs-lead: 19px;
+  --fs-h3: 22px;
+  --fs-h2: clamp(32px, 4.2vw, 46px);
+  --fs-h1: clamp(40px, 5.6vw, 68px);
 
   /* Layout */
-  --container-width: 1180px;
-  --radius-sm: 10px;
-  --radius-md: 18px;
-  --radius-lg: 28px;
+  --container-width: 1200px;
+  --gutter: 24px;
+  --radius: 14px;
   --radius-pill: 999px;
-  --shadow-soft: 0 12px 32px rgba(61, 37, 48, 0.12);
-  --shadow-card: 0 6px 20px rgba(61, 37, 48, 0.08);
-
-  --section-padding: 96px;
+  --section-padding: 120px;
 }
 
 @media (max-width: 768px) {
   :root {
-    --section-padding: 56px;
+    --section-padding: 72px;
+    --gutter: 16px;
   }
 }
 
@@ -56,18 +60,21 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 88px;
 }
 
 body {
   font-family: var(--font-body);
-  color: var(--color-text-dark);
-  background: var(--color-bg-white);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--porcelain);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
-img {
+img,
+video {
   max-width: 100%;
   display: block;
 }
@@ -79,136 +86,141 @@ a {
 
 button {
   font-family: inherit;
+  font-size: inherit;
+  color: inherit;
   cursor: pointer;
   border: none;
   background: none;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
-  font-weight: 600;
-  line-height: 1.15;
-  color: var(--color-primary-dark);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--plum-ink);
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 .container {
   width: 100%;
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 24px;
+  /* Só laterais: assim .container não zera padding vertical de quem o usa */
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
 }
 
 .section {
   padding: var(--section-padding) 0;
 }
 
-.section--soft {
-  background: var(--color-bg-soft);
+.section--mist {
+  background: var(--mist);
 }
 
 .section--dark {
-  background: var(--color-primary);
-  color: var(--color-text-on-dark);
+  background: var(--plum-ink);
+  color: var(--text-on-dark);
 }
 
 .section--dark h2,
 .section--dark h3 {
-  color: var(--color-text-on-dark);
-}
-
-.eyebrow {
-  display: inline-block;
-  font-family: var(--font-body);
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--color-secondary);
-  margin-bottom: 14px;
+  color: var(--text-on-dark);
 }
 
 .section-title {
-  font-size: clamp(28px, 4vw, 40px);
-  margin-bottom: 16px;
+  font-size: var(--fs-h2);
 }
 
 .section-subtitle {
-  font-family: var(--font-body);
-  font-size: 17px;
-  color: var(--color-text-gray);
-  max-width: 640px;
-  line-height: 1.6;
+  font-size: var(--fs-lead);
+  line-height: 1.55;
+  color: var(--text-muted);
+  max-width: 34em;
+  margin-top: 20px;
 }
 
-
+/* Cabeçalho de seção alinhado à esquerda: título + texto de apoio */
 .section-header {
-  text-align: center;
-  max-width: 720px;
-  margin: 0 auto 56px;
+  max-width: 760px;
+  margin-bottom: 64px;
 }
 
-.section-header .section-subtitle {
-  margin: 0 auto;
-}
-
-/* Botões reutilizados via componente Button, estilos base aqui */
+/* =========================================================================
+   BOTÕES
+   ========================================================================= */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-family: var(--font-body);
   font-weight: 600;
-  font-size: 15px;
-  padding: 16px 32px;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 16px 30px;
   border-radius: var(--radius-pill);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  border: 1.5px solid transparent;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
   white-space: nowrap;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
-
 .btn--primary {
-  background: var(--color-bg-white);
-  color: var(--color-primary-dark);
-  box-shadow: var(--shadow-soft);
+  background: var(--plum);
+  color: #ffffff;
 }
 
 .btn--primary:hover {
-  background: var(--color-bg-soft);
+  background: var(--plum-ink);
+}
+
+.section--dark .btn--primary,
+.btn--light {
+  background: var(--porcelain);
+  color: var(--plum-ink);
+}
+
+.section--dark .btn--primary:hover,
+.btn--light:hover {
+  background: var(--mist);
 }
 
 .btn--outline {
   background: transparent;
   color: inherit;
-  border: 1.5px solid currentColor;
+  border-color: currentColor;
+}
+
+.btn--outline:hover {
+  background: var(--plum-ink);
+  border-color: var(--plum-ink);
+  color: var(--porcelain);
 }
 
 .btn--whatsapp {
-  background: var(--color-whatsapp);
+  background: var(--whatsapp);
   color: #ffffff;
 }
 
 .btn--whatsapp:hover {
-  background: #1fb959;
+  background: #188a45;
 }
 
 .btn--block {
   width: 100%;
-}
-
-/* Use esta classe em qualquer <img> que substituir um ImagePlaceholder,
-   para manter o mesmo cantos arredondados + sombra do placeholder. */
-.photo {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-soft);
-  object-fit: cover;
 }
 
 .visually-hidden {
@@ -225,149 +237,20 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible,
-textarea:focus-visible {
-  outline: 2px solid var(--color-secondary);
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--gold);
   outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  * {
+  *,
+  *::before,
+  *::after {
     animation: none !important;
     transition: none !important;
   }
   html {
     scroll-behavior: auto;
   }
-}
-
-/* =========================================================================
-   POLISH — animações de entrada, microinterações e acabamentos.
-   Tudo protegido por html.has-reveal (só ativa quando o JS roda),
-   então o site nunca fica invisível se algo falhar.
-   ========================================================================= */
-
-html.has-reveal .reveal {
-  opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  transition-delay: var(--reveal-delay, 0ms);
-  will-change: opacity, transform;
-}
-
-html.has-reveal .reveal.reveal--in {
-  opacity: 1;
-  transform: none;
-}
-
-/* Detalhe decorativo sob o título das seções centralizadas */
-.section-header .section-title {
-  position: relative;
-  padding-bottom: 20px;
-}
-
-.section-header .section-title::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 54px;
-  height: 3px;
-  border-radius: var(--radius-pill);
-  transform: translateX(-50%);
-  background: linear-gradient(
-    90deg,
-    var(--color-secondary),
-    var(--color-primary-light)
-  );
-}
-
-/* Botões — brilho que percorre no hover + estado de clique */
-.btn {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-.btn::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  transform: translateX(-120%) skewX(-18deg);
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.45),
-    transparent
-  );
-  transition: transform 0.6s ease;
-  z-index: -1;
-}
-
-.btn:hover::after {
-  transform: translateX(120%) skewX(-18deg);
-}
-
-.btn--outline::after {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.18),
-    transparent
-  );
-}
-
-.btn:active {
-  transform: translateY(0) scale(0.98);
-}
-
-.btn--primary {
-  box-shadow: 0 10px 24px rgba(61, 37, 48, 0.16);
-}
-
-.btn--primary:hover {
-  box-shadow: 0 16px 34px rgba(61, 37, 48, 0.22);
-}
-
-/* Hover unificado dos cards */
-.symptoms__card,
-.steps__item,
-.testimonials__review,
-.numbers__item,
-.faq__item {
-  transition: transform 0.22s ease, box-shadow 0.22s ease,
-    border-color 0.22s ease;
-}
-
-.steps__item:hover,
-.testimonials__review:hover,
-.numbers__item:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-soft);
-  border-color: var(--color-secondary);
-}
-
-.symptoms__card:hover {
-  border-color: var(--color-secondary);
-}
-
-.faq__item:hover {
-  border-color: var(--color-secondary);
-}
-
-/* Números com valor em degradê e leve destaque */
-.numbers__item {
-  border: 1px solid var(--color-border);
-  background: linear-gradient(160deg, var(--color-bg-white), var(--color-bg-soft));
-}
-
-.numbers__value {
-  background: linear-gradient(
-    120deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
 }

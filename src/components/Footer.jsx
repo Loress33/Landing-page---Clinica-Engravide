@@ -36,9 +36,8 @@ export default function Footer() {
               <Icon name="phone" size={16} /> {site.phoneDisplay}
             </li>
             <li>{site.address}</li>
-            <li>
-              {site.crm} · {site.rqe}
-            </li>
+            <li>{site.crm}</li>
+            <li>{site.rqe}</li>
           </ul>
         </div>
 

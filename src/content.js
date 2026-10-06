@@ -32,7 +32,7 @@ export const nav = [
 ];
 
 export const hero = {
-  eyebrow: "Medicina Reprodutiva",
+  eyebrow: "Medicina reprodutiva em Barueri, SP",
   title:
     "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
   subtitle:
@@ -64,7 +64,6 @@ export const quickForm = {
 };
 
 export const authority = {
-  eyebrow: "Quem cuida de você",
   title: "Quem é a Dra. Renata",
   bio:
     "Dra. Renata é médica formada pela Pontifícia Universidade Católica de São Paulo (PUC-SP), especialista em Ginecologia e Obstetrícia e em Reprodução Humana pela Santa Casa de São Paulo. Fundadora da Clínica Engravide, dedica-se ao cuidado integral da saúde feminina, oferecendo um atendimento humanizado, acolhedor e de excelência para ajudar mulheres e famílias a realizarem o sonho de uma gestação saudável e segura.", // EDITAR
@@ -80,10 +79,12 @@ export const authority = {
 };
 
 export const symptoms = {
-  eyebrow: "Você não está sozinha",
   title: "Você se identifica com alguma dessas situações?",
   subtitle:
-    "Cada jornada reprodutiva é única. Se algo abaixo faz sentido para você, uma avaliação especializada pode trazer respostas.",
+    "Cada jornada reprodutiva é única. Marque o que faz sentido para você e envie para a equipe: uma avaliação especializada pode trazer respostas.",
+  emptyHint: "Toque nas situações que se aplicam a você.",
+  resultHint: "Envie sua lista para a equipe e receba orientação sobre a primeira consulta.",
+  resultButton: "Enviar pelo WhatsApp",
   items: [
     "Tentando engravidar há mais de 6 meses ou 1 ano",
     "Abortos de repetição",
@@ -99,8 +100,9 @@ export const symptoms = {
 };
 
 export const services = {
-  eyebrow: "Como posso ajudar",
   title: "Formas de cuidado e tratamento",
+  subtitle:
+    "Da investigação inicial ao tratamento, cada caminho é definido a partir da sua história e dos seus exames.",
   items: [
     {
       title: "Investigação da infertilidade",
@@ -151,7 +153,6 @@ export const services = {
 };
 
 export const differentials = {
-  eyebrow: "Diferenciais",
   title: "Por que escolher a Clínica Engravide?", // ajustado para o nome da clínica (imagem enviada). Troque se o nome oficial for outro.
   items: [
     "Atendimento individualizado",
@@ -164,8 +165,9 @@ export const differentials = {
 };
 
 export const steps = {
-  eyebrow: "Como funciona",
   title: "Sua jornada, passo a passo",
+  subtitle:
+    "Os desenhos acompanham as primeiras divisões de um embrião, de uma célula até a mórula.",
   items: [
     {
       step: "1",
@@ -196,10 +198,8 @@ export const steps = {
 };
 
 export const instagramVideos = {
-  eyebrow: "Conteúdo em vídeo",
   title: "Três dúvidas comuns explicadas pela Dra. Renata",
-  subtitle:
-    "Assista aos vídeos abaixo e, se quiser ver a publicação original, acesse o Instagram da clínica no botão ao final.",
+  subtitle: "Vídeos curtos publicados no Instagram da Dra. Renata.",
   ctaLabel: "Ver no Instagram",
   ctaHref: site.instagramUrl,
   items: [
@@ -228,9 +228,8 @@ export const instagramVideos = {
 };
 
 export const testimonials = {
-  eyebrow: "Quem já passou por aqui",
-  title: "Depoimentos",
-  subtitle: "Relatos escritos de pacientes, um vídeo de depoimento e avaliações reais em plataformas externas, sem promessas de resultado.",
+  title: "Quem já passou por aqui",
+  subtitle: "Relatos de pacientes em vídeo e avaliações publicadas no Google e no Doctoralia.",
   featuredVideo: {
     title: "Vídeo depoimento",
     description: "Um relato em vídeo para você sentir como é a experiência de cuidado na clínica.",
@@ -261,8 +260,8 @@ export const numbers = {
 };
 
 export const faq = {
-  eyebrow: "Perguntas frequentes",
-  title: "FAQ",
+  title: "Perguntas frequentes",
+  subtitle: "Não encontrou sua dúvida? Mande uma mensagem para a equipe.",
   items: [
     {
       question: "Quando devo procurar um especialista?",

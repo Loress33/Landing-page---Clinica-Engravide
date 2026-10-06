@@ -1,51 +1,68 @@
-.symptoms__grid {
+.symptoms__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 48px;
+  border-bottom: 1px solid var(--line);
+}
+
+.symptoms__item {
+  display: flex;
+  align-items: center;
   gap: 16px;
-}
-
-.symptoms__card {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  background: var(--color-bg-white);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 20px 22px;
-  font-size: 15px;
+  width: 100%;
+  min-height: 64px;
+  padding: 14px 4px;
+  text-align: left;
+  font-size: var(--fs-body);
   font-weight: 500;
-  color: var(--color-text-dark);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: var(--plum-ink);
+  border-top: 1px solid var(--line);
+  transition: color 0.2s ease;
 }
 
-.symptoms__card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-card);
-}
-
-.symptoms__check {
+.symptoms__mark {
   flex-shrink: 0;
-  width: 30px;
-  height: 30px;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background: linear-gradient(
-    145deg,
-    var(--color-primary-light),
-    var(--color-primary-dark)
-  );
-  color: var(--color-accent-cream);
+  border: 1.5px solid var(--plum-soft);
+  color: transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.symptoms__item:hover .symptoms__mark {
+  border-color: var(--plum);
+}
+
+.symptoms__item--on .symptoms__mark {
+  background: var(--plum);
+  border-color: var(--plum);
+  color: #ffffff;
+}
+
+.symptoms__result {
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: transform 0.22s ease;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 32px;
+  margin-top: 32px;
+  min-height: 56px;
 }
 
-.symptoms__card:hover .symptoms__check {
-  transform: scale(1.12) rotate(-6deg);
+.symptoms__result p {
+  color: var(--text-muted);
+  max-width: 40em;
 }
 
-@media (max-width: 700px) {
-  .symptoms__grid {
+@media (max-width: 760px) {
+  .symptoms__list {
     grid-template-columns: 1fr;
+  }
+
+  .symptoms__result .btn {
+    width: 100%;
   }
 }
