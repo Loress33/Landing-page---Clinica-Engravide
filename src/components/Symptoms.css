@@ -1,45 +1,68 @@
+/* Chips em pílula: cada situação é um botão de marcar */
 .symptoms__list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 48px;
-  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .symptoms__item {
   display: flex;
   align-items: center;
-  gap: 16px;
-  width: 100%;
-  min-height: 64px;
-  padding: 14px 4px;
+  gap: 12px;
+  min-height: 56px;
+  padding: 12px 24px 12px 14px;
   text-align: left;
-  font-size: var(--fs-body);
+  font-size: 1rem;
   font-weight: 500;
-  color: var(--plum-ink);
-  border-top: 1px solid var(--line);
-  transition: color 0.2s ease;
+  line-height: 1.35;
+  color: var(--color-plum-deep);
+  background: var(--surface-card);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-card);
+  transition: background-color var(--transition), color var(--transition),
+    border-color var(--transition), transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.symptoms__item:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-rose);
+  box-shadow: var(--shadow-soft);
+}
+
+.symptoms__item:active {
+  transform: scale(0.98);
 }
 
 .symptoms__mark {
   flex-shrink: 0;
   display: grid;
   place-items: center;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  border: 1.5px solid var(--plum-soft);
+  border: 2px solid var(--color-rose);
   color: transparent;
-  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: background-color var(--transition), border-color var(--transition),
+    color var(--transition), transform 0.3s var(--ease-out);
 }
 
-.symptoms__item:hover .symptoms__mark {
-  border-color: var(--plum);
+.symptoms__item--on {
+  background: var(--color-plum);
+  color: #ffffff;
+  border-color: var(--color-plum);
+}
+
+.symptoms__item--on:hover {
+  border-color: var(--color-plum-deep);
 }
 
 .symptoms__item--on .symptoms__mark {
-  background: var(--plum);
-  border-color: var(--plum);
-  color: #ffffff;
+  background: var(--color-cream);
+  border-color: var(--color-cream);
+  color: var(--color-plum);
+  transform: scale(1.08);
 }
 
 .symptoms__result {
@@ -48,18 +71,31 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 16px 32px;
-  margin-top: 32px;
-  min-height: 56px;
+  margin-top: 40px;
+  padding: 24px 32px;
+  min-height: 88px;
+  background: var(--color-rose-wash);
+  border-radius: var(--radius-xl);
 }
 
 .symptoms__result p {
-  color: var(--text-muted);
+  color: var(--color-plum-deep);
   max-width: 40em;
 }
 
 @media (max-width: 760px) {
   .symptoms__list {
-    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .symptoms__item {
+    width: 100%;
+    border-radius: var(--radius-lg);
+  }
+
+  .symptoms__result {
+    padding: 22px 20px;
+    border-radius: var(--radius-lg);
   }
 
   .symptoms__result .btn {

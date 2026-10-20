@@ -1,0 +1,3168 @@
+{
+ "url": "http://localhost:4173",
+ "at": "2026-10-19T13:36:04.399Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.94,
+    0.5,
+    0.79,
+    0.47,
+    0.56,
+    0.38,
+    1,
+    0.63,
+    0.4,
+    0.88,
+    1,
+    0.99
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 2,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 4,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 10185,
+     "screens": 11.3,
+     "words": 1341,
+     "img": 3,
+     "video": 4,
+     "canvas": 0,
+     "svg": 27,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 4,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dra-renata-hero.webp",
+      "dra-renata-autoridade.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+     "words": 15,
+     "chars": 82,
+     "lines": 5,
+     "size": 68,
+     "vw": 4.7,
+     "font": "Gloock",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.43,
+     "top": 199,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+     "words": 15,
+     "lines": 5,
+     "size": 68,
+     "font": "Gloock"
+    },
+    "headings": [
+     {
+      "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+      "words": 15,
+      "chars": 82,
+      "lines": 5,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 199,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Dê o primeiro passo",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.2,
+      "top": 889,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Quem é a Dra. Renata",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.44,
+      "top": 1423,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Você se identifica com alguma dessas situações?",
+      "words": 7,
+      "chars": 47,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 2210,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Formas de cuidado e tratamento",
+      "words": 5,
+      "chars": 30,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 3105,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Por que escolher a Clínica Engravide?",
+      "words": 6,
+      "chars": 37,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 4254,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sua jornada, passo a passo",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 4833,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Três dúvidas comuns explicadas pela Dra. Renata",
+      "words": 7,
+      "chars": 47,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 5584,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Quem já passou por aqui",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.41,
+      "top": 6933,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Perguntas frequentes",
+      "words": 2,
+      "chars": 20,
+      "lines": 2,
+      "size": 46,
+      "vw": 3.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 8362,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Você não precisa enfrentar essa jornada sozinha.",
+      "words": 7,
+      "chars": 48,
+      "lines": 3,
+      "size": 68,
+      "vw": 4.7,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 9330,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 5,
+     "over2Lines": 2,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Gloock",
+       "share": 0.18,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      19,
+      22,
+      24,
+      30,
+      46,
+      68
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 17,
+      "leading": 1.45,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.5
+     },
+     "measureChars": 67,
+     "max": {
+      "size": 68,
+      "vw": 4.7,
+      "font": "Gloock",
+      "text": "Há mais de 20 anos ajudando mulheres e c"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Medicina reprodutiva em Barueri, SP",
+      "above": "Há mais de 20 anos ajudando mulheres e c",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 153
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f8fafa",
+     "bodyBgHsl": {
+      "h": 180,
+      "s": 0.17,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e4ebee",
+       "top": 81,
+       "hsl": {
+        "h": 198,
+        "s": 0.23,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f8fafa",
+       "top": 845,
+       "hsl": {
+        "h": 180,
+        "s": 0.17,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#2a1c27",
+       "top": 4134,
+       "hsl": {
+        "h": 313,
+        "s": 0.2,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#655862",
+       "share": 0.45
+      },
+      {
+       "color": "#3b2f38",
+       "share": 0.23
+      },
+      {
+       "color": "#2a1c27",
+       "share": 0.2
+      },
+      {
+       "color": "#c2b5bf",
+       "share": 0.05
+      },
+      {
+       "color": "#efe9ee",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#5b3a4a",
+      "hsl": {
+       "h": 331,
+       "s": 0.22,
+       "l": 0.29
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Falar pelo WhatsApp",
+       "ratio": 3.1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#1fa855"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 19,
+     "inHero": 3,
+     "radius": 0,
+     "height": 64,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Agendar consulta",
+      "Agendar consulta",
+      "Falar pelo WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 46,
+     "hairlineSamples": [
+      "li 299px",
+      "li 299px",
+      "li 299px",
+      "li 299px",
+      "ul.symptoms__list 1152px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 5,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 9,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 3299
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 4254
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 7417
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.17
+     },
+     {
+      "type": "img",
+      "ratio": 0.14
+     }
+    ],
+    "nav": {
+     "links": 10,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "albert sans",
+     "gloock"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 10185,
+    "margins": {
+     "left": 144,
+     "right": 144
+    },
+    "sections": [
+     {
+      "sel": "section#hero.hero",
+      "tag": "section",
+      "top": 81,
+      "height": 1198,
+      "words": 91,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Há mais de 20 anos ajudando mulheres e casais a re",
+       "size": 68,
+       "tag": "h1"
+      },
+      "left": 144,
+      "right": 164,
+      "textLeft": 144,
+      "textRight": 202,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#autoridade.section.authority",
+      "tag": "section",
+      "top": 1279,
+      "height": 810,
+      "words": 107,
+      "media": 1,
+      "middle": 88,
+      "heading": {
+       "text": "Quem é a Dra. Renata",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 166,
+      "textLeft": 144,
+      "textRight": 166,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#sintomas.section.section--mist",
+      "tag": "section",
+      "top": 2090,
+      "height": 895,
+      "words": 74,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Você se identifica com alguma dessas situações?",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 460,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tratamentos.section.services",
+      "tag": "section",
+      "top": 2985,
+      "height": 1149,
+      "words": 176,
+      "media": 0,
+      "middle": 55,
+      "heading": {
+       "text": "Formas de cuidado e tratamento",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 163,
+      "textLeft": 144,
+      "textRight": 163,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section--dark",
+      "tag": "section",
+      "top": 4134,
+      "height": 579,
+      "words": 31,
+      "media": 0,
+      "middle": 124,
+      "heading": {
+       "text": "Por que escolher a Clínica Engravide?",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 161,
+      "textLeft": 144,
+      "textRight": 161,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.steps",
+      "tag": "section",
+      "top": 4713,
+      "height": 751,
+      "words": 102,
+      "media": 0,
+      "middle": 50,
+      "heading": {
+       "text": "Sua jornada, passo a passo",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 154,
+      "textLeft": 144,
+      "textRight": 154,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#videos.section.section--mist",
+      "tag": "section",
+      "top": 5464,
+      "height": 1252,
+      "words": 103,
+      "media": 3,
+      "middle": 40,
+      "heading": {
+       "text": "Três dúvidas comuns explicadas pela Dra. Renata",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 175,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#depoimentos.section.testimonials",
+      "tag": "section",
+      "top": 6715,
+      "height": 1526,
+      "words": 324,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Quem já passou por aqui",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 145,
+      "textLeft": 144,
+      "textRight": 145,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.section.section--mist",
+      "tag": "section",
+      "top": 8242,
+      "height": 969,
+      "words": 275,
+      "media": 0,
+      "middle": 163,
+      "heading": {
+       "text": "Perguntas frequentes",
+       "size": 46,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 203,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section--dark",
+      "tag": "section",
+      "top": 9210,
+      "height": 452,
+      "words": 25,
+      "media": 0,
+      "middle": 191,
+      "heading": {
+       "text": "Você não precisa enfrentar essa jornada sozinha.",
+       "size": 68,
+       "tag": "h2"
+      },
+      "left": 144,
+      "right": 159,
+      "textLeft": 144,
+      "textRight": 159,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 9662,
+      "height": 523,
+      "words": 63,
+      "media": 1,
+      "middle": 127,
+      "heading": {
+       "text": "Clínica Engravide",
+       "size": 24,
+       "tag": "span"
+      },
+      "left": 144,
+      "right": 144,
+      "textLeft": 144,
+      "textRight": 144,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidad",
+      "size": 68,
+      "top": 199,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 653,
+      "n": 16
+     },
+     {
+      "x": 144,
+      "n": 14
+     },
+     {
+      "x": 702,
+      "n": 3
+     },
+     {
+      "x": 192,
+      "n": 2
+     },
+     {
+      "x": 541,
+      "n": 2
+     },
+     {
+      "x": 939,
+      "n": 2
+     },
+     {
+      "x": 834,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 40,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 120,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    0.54,
+    0.59,
+    0.64,
+    0.29,
+    0.59,
+    0.63,
+    0.7,
+    0.81,
+    0.53,
+    0.95,
+    0.99
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 2,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 4,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 12310,
+     "screens": 12,
+     "words": 1339,
+     "img": 3,
+     "video": 4,
+     "canvas": 0,
+     "svg": 27,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 4,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dra-renata-hero.webp",
+      "dra-renata-autoridade.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+     "words": 15,
+     "chars": 82,
+     "lines": 3,
+     "size": 43,
+     "vw": 5.6,
+     "font": "Gloock",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.96,
+     "top": 175,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+     "words": 15,
+     "lines": 3,
+     "size": 43,
+     "font": "Gloock"
+    },
+    "headings": [
+     {
+      "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+      "words": 15,
+      "chars": 82,
+      "lines": 3,
+      "size": 43,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 175,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Dê o primeiro passo",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1126,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Quem é a Dra. Renata",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2254,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Você se identifica com alguma dessas situações?",
+      "words": 7,
+      "chars": 47,
+      "lines": 1,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2895,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Formas de cuidado e tratamento",
+      "words": 5,
+      "chars": 30,
+      "lines": 1,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 3637,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Por que escolher a Clínica Engravide?",
+      "words": 6,
+      "chars": 37,
+      "lines": 1,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 5170,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sua jornada, passo a passo",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 5729,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Três dúvidas comuns explicadas pela Dra. Renata",
+      "words": 7,
+      "chars": 47,
+      "lines": 1,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6807,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Quem já passou por aqui",
+      "words": 5,
+      "chars": 23,
+      "lines": 1,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7909,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Perguntas frequentes",
+      "words": 2,
+      "chars": 20,
+      "lines": 1,
+      "size": 32.3,
+      "vw": 4.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 10238,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Você não precisa enfrentar essa jornada sozinha.",
+      "words": 7,
+      "chars": 48,
+      "lines": 2,
+      "size": 43,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 11242,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 3,
+     "over2Lines": 1,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 5,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Gloock",
+       "share": 0.18,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      19,
+      22,
+      24,
+      30,
+      32,
+      43
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 17,
+      "leading": 1.45,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.5
+     },
+     "measureChars": 72,
+     "max": {
+      "size": 43,
+      "vw": 5.6,
+      "font": "Gloock",
+      "text": "Há mais de 20 anos ajudando mulheres e c"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Medicina reprodutiva em Barueri, SP",
+      "above": "Há mais de 20 anos ajudando mulheres e c",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 129
+     },
+     {
+      "text": "CRM 99227",
+      "above": "Quem é a Dra. Renata",
+      "upper": true,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 2191
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f8fafa",
+     "bodyBgHsl": {
+      "h": 180,
+      "s": 0.17,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e4ebee",
+       "top": 81,
+       "hsl": {
+        "h": 198,
+        "s": 0.23,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f8fafa",
+       "top": 1094,
+       "hsl": {
+        "h": 180,
+        "s": 0.17,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#2a1c27",
+       "top": 5098,
+       "hsl": {
+        "h": 313,
+        "s": 0.2,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#655862",
+       "share": 0.46
+      },
+      {
+       "color": "#3b2f38",
+       "share": 0.23
+      },
+      {
+       "color": "#2a1c27",
+       "share": 0.2
+      },
+      {
+       "color": "#c2b5bf",
+       "share": 0.05
+      },
+      {
+       "color": "#efe9ee",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#1fa855",
+      "hsl": {
+       "h": 144,
+       "s": 0.69,
+       "l": 0.39
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Falar pelo WhatsApp",
+       "ratio": 3.1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#1fa855"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 18,
+     "inHero": 2,
+     "radius": 0,
+     "height": 53,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Agendar consulta",
+      "Falar pelo WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 47,
+     "hairlineSamples": [
+      "li 320px",
+      "li 320px",
+      "li 320px",
+      "li 320px",
+      "ul.symptoms__list 736px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 5,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 9,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 3816
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 5246
+      },
+      {
+       "count": 6,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 9024
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.14
+     },
+     {
+      "type": "img",
+      "ratio": 0.11
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "albert sans",
+     "gloock"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 12310,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "section#hero.hero",
+      "tag": "section",
+      "top": 81,
+      "height": 1497,
+      "words": 91,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Há mais de 20 anos ajudando mulheres e casais a re",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 40,
+      "textLeft": 16,
+      "textRight": 109,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#autoridade.section.authority",
+      "tag": "section",
+      "top": 1578,
+      "height": 1245,
+      "words": 107,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 16,
+      "right": 79,
+      "textLeft": 16,
+      "textRight": 79,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#sintomas.section.section--mist",
+      "tag": "section",
+      "top": 2823,
+      "height": 742,
+      "words": 74,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Você se identifica com alguma dessas situações?",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tratamentos.section.services",
+      "tag": "section",
+      "top": 3565,
+      "height": 1533,
+      "words": 176,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Formas de cuidado e tratamento",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 22,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section--dark",
+      "tag": "section",
+      "top": 5098,
+      "height": 559,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Por que escolher a Clínica Engravide?",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 39,
+      "textLeft": 16,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.steps",
+      "tag": "section",
+      "top": 5657,
+      "height": 1078,
+      "words": 102,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Sua jornada, passo a passo",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 114,
+      "textLeft": 16,
+      "textRight": 114,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#videos.section.section--mist",
+      "tag": "section",
+      "top": 6735,
+      "height": 1102,
+      "words": 103,
+      "media": 3,
+      "middle": 0,
+      "heading": {
+       "text": "Três dúvidas comuns explicadas pela Dra. Renata",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": -183,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#depoimentos.section.testimonials",
+      "tag": "section",
+      "top": 7837,
+      "height": 2329,
+      "words": 324,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Quem já passou por aqui",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.section.section--mist",
+      "tag": "section",
+      "top": 10166,
+      "height": 1004,
+      "words": 275,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Perguntas frequentes",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 109,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section--dark",
+      "tag": "section",
+      "top": 11170,
+      "height": 381,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Você não precisa enfrentar essa jornada sozinha.",
+       "size": 43,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 59,
+      "textLeft": 16,
+      "textRight": 59,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 11551,
+      "height": 759,
+      "words": 63,
+      "media": 1,
+      "middle": 32,
+      "heading": {
+       "text": "Clínica Engravide",
+       "size": 24,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidad",
+      "size": 43,
+      "top": 175,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 34
+     },
+     {
+      "x": 40,
+      "n": 2
+     },
+     {
+      "x": 336,
+      "n": 2
+     },
+     {
+      "x": 656,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 40,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    1,
+    0.78,
+    0.89,
+    0.59,
+    1,
+    0.66,
+    0.41,
+    0.47,
+    0.86,
+    0.46,
+    0.61,
+    1
+   ],
+   "motion": {
+    "elements": 3,
+    "css": 2,
+    "transitions": 1,
+    "scripted": 0,
+    "videos": 4,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 16069,
+     "screens": 19,
+     "words": 1339,
+     "img": 3,
+     "video": 4,
+     "canvas": 0,
+     "svg": 27,
+     "sections": 10,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 4,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "dra-renata-hero.webp",
+      "dra-renata-autoridade.webp"
+     ],
+     "blendText": 0,
+     "sideScrollers": 1,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+     "words": 15,
+     "chars": 82,
+     "lines": 5,
+     "size": 40,
+     "vw": 10.3,
+     "font": "Gloock",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.04,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 175,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+     "words": 15,
+     "lines": 5,
+     "size": 40,
+     "font": "Gloock"
+    },
+    "headings": [
+     {
+      "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidade.",
+      "words": 15,
+      "chars": 82,
+      "lines": 5,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 175,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Dra. Renata",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.31,
+      "top": 1125,
+      "tag": "strong",
+      "kind": "statement"
+     },
+     {
+      "text": "Dê o primeiro passo",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 30,
+      "vw": 7.7,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 1295,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Quem é a Dra. Renata",
+      "words": 5,
+      "chars": 20,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2603,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Você se identifica com alguma dessas situações?",
+      "words": 7,
+      "chars": 47,
+      "lines": 3,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3531,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Formas de cuidado e tratamento",
+      "words": 5,
+      "chars": 30,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 4724,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Investigação da infertilidade",
+      "words": 3,
+      "chars": 29,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5051,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Planejamento reprodutivo",
+      "words": 2,
+      "chars": 24,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5255,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Preservação da fertilidade",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5459,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Fertilização in vitro (FIV)",
+      "words": 4,
+      "chars": 27,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5690,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Inseminação intrauterina",
+      "words": 2,
+      "chars": 24,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5922,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Abortamento recorrente",
+      "words": 2,
+      "chars": 22,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6153,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Endometriose e fertilidade",
+      "words": 3,
+      "chars": 26,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6385,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Avaliação masculina",
+      "words": 2,
+      "chars": 19,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6589,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Segunda opinião especializada",
+      "words": 3,
+      "chars": 29,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6793,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Por que escolher a Clínica Engravide?",
+      "words": 6,
+      "chars": 37,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7058,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sua jornada, passo a passo",
+      "words": 5,
+      "chars": 26,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7770,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Consulta detalhada",
+      "words": 2,
+      "chars": 18,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.67,
+      "top": 8050,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Investigação completa do casal",
+      "words": 4,
+      "chars": 30,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.67,
+      "top": 8234,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Definição da estratégia ideal",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.67,
+      "top": 8442,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Tratamento personalizado",
+      "words": 2,
+      "chars": 24,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.67,
+      "top": 8651,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Acompanhamento contínuo",
+      "words": 2,
+      "chars": 23,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.67,
+      "top": 8859,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Três dúvidas comuns explicadas pela Dra. Renata",
+      "words": 7,
+      "chars": 47,
+      "lines": 3,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 9139,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Sinais do corpo que podem indicar dificuldade para engravidar",
+      "words": 9,
+      "chars": 61,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.72,
+      "top": 9963,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Infertilidade precisa ser investigada em mulher e homem",
+      "words": 8,
+      "chars": 55,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.72,
+      "top": 9963,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "A exaustão emocional de quem tenta engravidar",
+      "words": 7,
+      "chars": 45,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.72,
+      "top": 9963,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Quem já passou por aqui",
+      "words": 5,
+      "chars": 23,
+      "lines": 2,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 10305,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Perguntas frequentes",
+      "words": 2,
+      "chars": 20,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.12,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 13195,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Você não precisa enfrentar essa jornada sozinha.",
+      "words": 7,
+      "chars": 48,
+      "lines": 3,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.04,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 14318,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Clínica Engravide",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Gloock",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.6,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 14853,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 30,
+     "maxLines": 5,
+     "over2Lines": 6,
+     "statements": 1,
+     "centered": 1,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Albert Sans",
+       "share": 0.82,
+       "mono": false
+      },
+      {
+       "family": "Gloock",
+       "share": 0.18,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      19,
+      21,
+      22,
+      24,
+      30,
+      32,
+      40
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Albert Sans",
+      "size": 17,
+      "leading": 1.45,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 15.5
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Gloock",
+      "text": "Há mais de 20 anos ajudando mulheres e c"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Medicina reprodutiva em Barueri, SP",
+      "above": "Há mais de 20 anos ajudando mulheres e c",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 129
+     },
+     {
+      "text": "CRM 99227",
+      "above": "Quem é a Dra. Renata",
+      "upper": true,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 14,
+      "top": 2541
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f8fafa",
+     "bodyBgHsl": {
+      "h": 180,
+      "s": 0.17,
+      "l": 0.98
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#e4ebee",
+       "top": 81,
+       "hsl": {
+        "h": 198,
+        "s": 0.23,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#f8fafa",
+       "top": 1263,
+       "hsl": {
+        "h": 180,
+        "s": 0.17,
+        "l": 0.98
+       }
+      },
+      {
+       "color": "#c9d5da",
+       "top": 2078,
+       "hsl": {
+        "h": 198,
+        "s": 0.19,
+        "l": 0.82
+       }
+      },
+      {
+       "color": "#2a1c27",
+       "top": 6986,
+       "hsl": {
+        "h": 313,
+        "s": 0.2,
+        "l": 0.14
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#655862",
+       "share": 0.46
+      },
+      {
+       "color": "#3b2f38",
+       "share": 0.23
+      },
+      {
+       "color": "#2a1c27",
+       "share": 0.2
+      },
+      {
+       "color": "#c2b5bf",
+       "share": 0.05
+      },
+      {
+       "color": "#efe9ee",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#1fa855",
+      "hsl": {
+       "h": 144,
+       "s": 0.69,
+       "l": 0.39
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": [
+      {
+       "text": "Falar pelo WhatsApp",
+       "ratio": 3.1,
+       "need": 4.5,
+       "size": 16,
+       "fg": "#ffffff",
+       "bg": "#1fa855"
+      }
+     ]
+    },
+    "buttons": {
+     "count": 18,
+     "inHero": 2,
+     "radius": 0,
+     "height": 53,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Agendar consulta",
+      "Falar pelo WhatsApp"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 1,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 47,
+     "hairlineSamples": [
+      "li 358px",
+      "li 358px",
+      "li 358px",
+      "li 358px",
+      "ul.symptoms__list 358px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 1,
+     "roundedBoxes": 5,
+     "boxRadius": 14,
+     "squareMedia": 0,
+     "roundedMedia": 6,
+     "mediaRadius": 14,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.1
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 81,
+     "floatingPill": false,
+     "blur": true
+    },
+    "fontsLoaded": [
+     "albert sans",
+     "gloock"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 16069,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "div.container.hero__inner",
+      "tag": "div",
+      "top": 81,
+      "height": 1182,
+      "words": 54,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Há mais de 20 anos ajudando mulheres e casais a re",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 18,
+      "textLeft": 16,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div#contato.container.hero__form-wrap",
+      "tag": "div",
+      "top": 1263,
+      "height": 742,
+      "words": 37,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Dê o primeiro passo",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 40,
+      "textLeft": 40,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#autoridade.section.authority",
+      "tag": "section",
+      "top": 2006,
+      "height": 1454,
+      "words": 107,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Quem é a Dra. Renata",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#sintomas.section.section--mist",
+      "tag": "section",
+      "top": 3459,
+      "height": 1192,
+      "words": 74,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Você se identifica com alguma dessas situações?",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#tratamentos.section.services",
+      "tag": "section",
+      "top": 4652,
+      "height": 2334,
+      "words": 176,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Formas de cuidado e tratamento",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 22,
+      "textLeft": 16,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section--dark",
+      "tag": "section",
+      "top": 6986,
+      "height": 712,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Por que escolher a Clínica Engravide?",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 26,
+      "textLeft": 16,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.steps",
+      "tag": "section",
+      "top": 7698,
+      "height": 1369,
+      "words": 102,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Sua jornada, passo a passo",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 19,
+      "textLeft": 16,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#videos.section.section--mist",
+      "tag": "section",
+      "top": 9067,
+      "height": 1166,
+      "words": 103,
+      "media": 3,
+      "middle": 224,
+      "heading": {
+       "text": "Três dúvidas comuns explicadas pela Dra. Renata",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": -470,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#depoimentos.section.testimonials",
+      "tag": "section",
+      "top": 10233,
+      "height": 2890,
+      "words": 324,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Quem já passou por aqui",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#faq.section.section--mist",
+      "tag": "section",
+      "top": 13123,
+      "height": 1123,
+      "words": 249,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Perguntas frequentes",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.section.section--dark",
+      "tag": "section",
+      "top": 14246,
+      "height": 542,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Você não precisa enfrentar essa jornada sozinha.",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 81,
+      "textLeft": 16,
+      "textRight": 81,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 14788,
+      "height": 1281,
+      "words": 63,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clínica Engravide",
+       "size": 24,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Há mais de 20 anos ajudando mulheres e casais a realizarem o sonho da maternidad",
+      "size": 40,
+      "top": 175,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 34
+     },
+     {
+      "x": 40,
+      "n": 2
+     },
+     {
+      "x": 315,
+      "n": 2
+     },
+     {
+      "x": 614,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 40,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 1440,
+   "message": "2 headline(s) wrap past two lines at 1440px: \"Há mais de 20 anos ajudando mulheres e casais a \" → 5 lines (15 words, 68px); \"Você não precisa enfrentar essa jornada sozinha.\" → 3 lines (7 words, 68px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 36px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "hero-words",
+   "width": 1440,
+   "message": "Hero headline is 15 words (\"Há mais de 20 anos ajudando mulheres e casais a realizarem o\"). Gallery median is 5.",
+   "fix": "Say the one thing. Move the rest to the supporting line.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Medicina reprodutiva em Barueri, SP\" above \"Há mais de 20 anos ajudando mulheres e c\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "hairline",
+   "width": 1440,
+   "message": "46 thin rule(s)/divider line(s): li 299px | li 299px | li 299px | li 299px",
+   "fix": "Delete. Separate with space, a tone change, or scale. Lines are only for real tables and form fields.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "icon-cards",
+   "width": 1440,
+   "message": "1 row(s) of identical cards each topped with a small icon (9 cards).",
+   "fix": "Replace with one composed section from the direction: a narrative split, a list set in large type, or real imagery per item.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "contrast",
+   "width": 1440,
+   "message": "Low-contrast text: \"Falar pelo WhatsApp\" 3.1:1 needs 4.5:1",
+   "fix": "Darken or lighten the text colour.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (14, 15, 16, 17, 19, 22, 24, 30, 46, 68).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "still-page",
+   "width": 1440,
+   "message": "Only 3 element(s) moved while the page loaded and scrolled.",
+   "fix": "Build the motion layer (SKILL.md step 9, references/motion.md): the signature move, an entrance for the parts of every section, feedback on every control, and one moving picture. Transform and opacity only, with a reduced-motion fallback."
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 768,
+   "message": "1 headline(s) wrap past two lines at 768px: \"Há mais de 20 anos ajudando mulheres e casais a \" → 3 lines (15 words, 43px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 32px or less."
+  },
+  {
+   "level": "WARN",
+   "id": "side-scroll",
+   "width": 768,
+   "message": "1 row(s) scroll sideways with content past their edge.",
+   "fix": "Jurors and most visitors read a row cut at the edge as clipped, not as scrollable. Wrap it onto more lines, or end it inside the grid.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "headline-lines",
+   "width": 390,
+   "message": "6 headline(s) wrap past two lines at 390px: \"Há mais de 20 anos ajudando mulheres e casais a \" → 5 lines (15 words, 40px); \"Você se identifica com alguma dessas situações?\" → 3 lines (7 words, 32px); \"Três dúvidas comuns explicadas pela Dra. Renata\" → 3 lines (7 words, 32px); \"Sinais do corpo que podem indicar dificuldade pa\" → 3 lines (9 words, 22px)",
+   "fix": "Cut words first (a headline is a title, not a sentence). Then give it a wider measure. Lower the size only as a last resort and never below the scale you chose. A real statement paragraph belongs in a <p> or <blockquote> at 24px or less."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/desktop-fold.jpg",
+   "pages": [
+    "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/desktop-page-01.jpg",
+    "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/desktop-page-02.jpg",
+    "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/tablet-fold.jpg",
+   "pages": [
+    "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/tablet-page-01.jpg",
+    "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/mobile-fold.jpg",
+   "pages": [
+    "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/mobile-page-01.jpg",
+    "/home/lorenzoa/VSC/Projetos/Landing-page---Clinica-Engravide/.taste-skill/before/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

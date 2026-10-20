@@ -2,47 +2,100 @@
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
   gap: 88px;
-  align-items: start;
+  align-items: center;
+}
+
+.authority__media {
+  position: relative;
+}
+
+/* Contorno em arco atrás da foto — ecoa o óvulo do topo da página */
+.authority__media::before {
+  content: "";
+  position: absolute;
+  inset: -18px 18px 18px -18px;
+  border: 2px solid var(--color-rose-soft);
+  border-radius: calc(var(--radius-xl) + 18px);
 }
 
 .authority__media .image-placeholder {
-  border-radius: var(--radius);
+  position: relative;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-float);
 }
 
 .authority__registry {
+  position: absolute;
+  right: -14px;
+  bottom: 22px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 4px 20px;
-  margin-top: 16px;
-  font-size: var(--fs-small);
-  color: var(--text-muted);
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
 }
 
-.authority__content {
-  padding-top: 24px;
+.authority__registry span {
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-card);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--color-plum);
 }
 
 .authority__bio {
-  margin-top: 28px;
+  margin-top: 24px;
   font-size: var(--fs-lead);
-  line-height: 1.65;
+  line-height: 1.7;
   max-width: 36em;
 }
 
 .authority__credentials {
-  margin-top: 48px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 40px;
-  max-width: 40em;
+  gap: 16px;
 }
 
 .authority__credentials li {
-  padding: 18px 0;
-  border-top: 1px solid var(--gold);
-  font-weight: 500;
-  color: var(--plum-ink);
-  line-height: 1.45;
+  position: relative;
+  padding: 22px 22px 22px 66px;
+  background: var(--color-cream);
+  border-radius: var(--radius-lg);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: var(--color-plum-deep);
+  line-height: 1.5;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.authority__credentials li:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+/* Marca: anel com um ponto — a célula dentro da zona pelúcida */
+.authority__credentials li::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 24px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 2px solid var(--color-rose);
+}
+
+.authority__credentials li::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 34px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-plum);
 }
 
 @media (max-width: 900px) {
@@ -52,11 +105,12 @@
   }
 
   .authority__media {
-    max-width: 420px;
+    max-width: 400px;
+    margin-left: 18px;
   }
 
-  .authority__content {
-    padding-top: 0;
+  .authority__registry {
+    right: 12px;
   }
 }
 

@@ -1,0 +1,102 @@
+/* Duas folhas lado a lado na mesma moldura de 16px: o texto e a foto */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--frame);
+  padding: var(--frame);
+  align-items: start;
+}
+
+.split__sheet {
+  grid-column: 1;
+  grid-row: 1;
+  background: var(--surface);
+  min-width: 0;
+  container-type: inline-size;
+}
+
+/* A coluna de leitura: uma medida só, centrada na folha */
+.sheet__col {
+  max-width: 34rem;
+  margin-inline: auto;
+  padding-inline: var(--pad);
+  box-sizing: content-box;
+}
+
+.sheet__section {
+  padding-block: var(--section);
+}
+
+.stage {
+  grid-column: 2;
+  grid-row: 1;
+  position: sticky;
+  top: var(--frame);
+  height: calc(100svh - 2 * var(--frame));
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.stage__photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 1.6s ease, transform 6s var(--ease-soft);
+}
+
+.stage__photo--on {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Faixa cor de papel na borda de baixo da foto, com a legenda */
+.stage__bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 20px;
+  background: var(--bg);
+  font-size: var(--step-small);
+  line-height: 1.3;
+}
+
+.stage__bar span:last-child {
+  color: var(--muted);
+  text-align: right;
+}
+
+/* Celular: a foto vem primeiro e fica presa no topo; a folha sobe por cima */
+@media (max-width: 899px) {
+  .split {
+    display: block;
+    padding: 0;
+  }
+
+  .stage {
+    position: sticky;
+    top: 0;
+    height: 46svh;
+    margin: var(--frame) var(--frame) 0;
+    z-index: 0;
+  }
+
+  .stage__bar {
+    padding: 10px 16px;
+  }
+
+  .split__sheet {
+    position: relative;
+    z-index: 1;
+  }
+}

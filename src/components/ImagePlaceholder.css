@@ -1,8 +1,8 @@
 .image-placeholder {
   width: 100%;
-  border-radius: var(--radius);
-  background: var(--mist-deep);
-  color: var(--plum-ink);
+  border-radius: var(--radius-lg);
+  background: var(--color-cream-deep);
+  color: var(--color-plum-deep);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
 }
 
 .image-placeholder span {
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 600;
   max-width: 220px;
 }

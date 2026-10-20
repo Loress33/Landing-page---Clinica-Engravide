@@ -3,14 +3,16 @@
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 72px;
   align-items: center;
-  margin-bottom: 96px;
+  margin-bottom: 88px;
 }
 
 .testimonials__video-player {
+  position: relative;
   aspect-ratio: 1 / 1;
-  border-radius: var(--radius);
+  border-radius: var(--radius-xl);
   overflow: hidden;
-  background: var(--plum-ink);
+  background: var(--color-plum-deep);
+  box-shadow: var(--shadow-float);
 }
 
 .testimonials__video-player video {
@@ -21,33 +23,49 @@
 
 .testimonials__video-note {
   margin: 20px 0 32px;
-  color: var(--text-muted);
+  color: var(--text-medium);
   max-width: 34em;
-}
-
-.testimonials__intro .btn {
-  color: var(--plum-ink);
 }
 
 .testimonials__reviews {
   columns: 3 300px;
-  column-gap: 56px;
+  column-gap: 24px;
 }
 
 .testimonials__review {
+  position: relative;
   break-inside: avoid;
-  padding: 28px 0 40px;
-  border-top: 1px solid var(--gold);
+  margin-bottom: 24px;
+  padding: 56px 30px 30px;
+  background: var(--color-cream);
+  border-radius: var(--radius-xl);
+  transition: transform var(--transition), box-shadow var(--transition),
+    background-color var(--transition);
+}
+
+.testimonials__review:hover {
+  transform: translateY(-4px);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Aspas grandes em rosa: abrem cada relato */
+.testimonials__review::before {
+  content: "“";
+  position: absolute;
+  top: 8px;
+  left: 26px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: var(--color-rose);
 }
 
 .testimonials__review blockquote p {
-  font-size: var(--fs-body);
-  line-height: 1.65;
-  color: var(--text);
-}
-
-.testimonials__review blockquote p::before {
-  content: "“";
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-strong);
 }
 
 .testimonials__review blockquote p::after {
@@ -57,29 +75,40 @@
 .testimonials__author {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 22px;
   font-size: var(--fs-small);
 }
 
 .testimonials__author strong {
   font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 19px;
-  color: var(--plum-ink);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--color-plum-deep);
 }
 
 .testimonials__author span {
-  color: var(--text-muted);
+  color: var(--text-medium);
 }
 
 @media (max-width: 900px) {
   .testimonials__featured {
     grid-template-columns: 1fr;
-    gap: 40px;
-    margin-bottom: 64px;
+    gap: 36px;
+    margin-bottom: 56px;
   }
 
   .testimonials__intro {
     order: -1;
+  }
+
+  .testimonials__video-player {
+    border-radius: var(--radius-lg);
+  }
+}
+
+@media (max-width: 560px) {
+  .testimonials__review {
+    padding: 52px 24px 26px;
+    border-radius: var(--radius-lg);
   }
 }

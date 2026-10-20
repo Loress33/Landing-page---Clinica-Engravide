@@ -1,5 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
+import { useEffect } from "react";
+import { initReveal } from "./reveal";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Authority from "./components/Authority";
@@ -15,6 +17,11 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function App() {
+  useEffect(() => {
+    document.documentElement.classList.add("js");
+    return initReveal();
+  }, []);
+
   return (
     <>
       <Header />

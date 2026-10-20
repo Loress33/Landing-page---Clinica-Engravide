@@ -1,0 +1,96 @@
+.contact__head {
+  padding-top: var(--section);
+  padding-bottom: 56px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(12px, 1.4vw, 24px);
+  align-items: end;
+}
+
+.contact__head h2 {
+  grid-column: 1 / span 6;
+}
+
+.contact__head p {
+  grid-column: 8 / -1;
+  max-width: 36ch;
+}
+
+/* Cada linha é uma faixa inteira; as faixas alternam dois tons */
+.contact__row {
+  min-height: clamp(84px, 10vw, 150px);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 var(--edge) clamp(14px, 1.6vw, 24px);
+  font-size: var(--step-head);
+  line-height: 1;
+  letter-spacing: -0.025em;
+}
+
+.contact__row:nth-child(odd) {
+  background: var(--surface);
+}
+
+.contact__row a {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.12em;
+  transition: text-decoration-color var(--t-hover) ease, transform var(--t-hover) var(--ease-out);
+}
+
+.contact__row a:hover {
+  text-decoration-color: currentColor;
+  transform: translateX(8px);
+}
+
+.contact__row--action.field {
+  background: var(--ink);
+}
+
+.contact__row--action a {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.contact__row--action a:hover {
+  text-decoration-color: transparent;
+}
+
+/* Botão reto com a seta, do tamanho da letra */
+.contact__arrow {
+  display: inline-grid;
+  place-items: center;
+  width: 1.3em;
+  height: 1.3em;
+  background: var(--field-ink);
+  color: var(--ink);
+  font-size: 0.8em;
+  transition: transform var(--t-hover) var(--ease-out);
+}
+
+.contact__row--action a:hover .contact__arrow {
+  transform: translateX(6px);
+}
+
+@media (max-width: 899px) {
+  .contact__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .contact__row {
+    min-height: 84px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  .contact__row a {
+    gap: 16px;
+  }
+}

@@ -2,20 +2,21 @@
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr);
   gap: 48px;
-  background: var(--porcelain);
-  border-radius: var(--radius);
-  padding: 44px 48px;
+  background: var(--surface-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-soft);
+  padding: 44px 52px;
 }
 
 .quick-form__text h2 {
-  font-size: 30px;
+  font-size: 1.75rem;
   margin-bottom: 12px;
 }
 
 .quick-form__text p {
-  font-size: 16px;
-  color: var(--text-muted);
-  line-height: 1.55;
+  font-size: 1rem;
+  color: var(--text-medium);
+  line-height: 1.6;
 }
 
 .quick-form__fields {
@@ -34,35 +35,39 @@
 .quick-form__field label {
   font-size: var(--fs-small);
   font-weight: 600;
-  color: var(--plum-ink);
+  color: var(--color-plum-deep);
 }
 
 .quick-form__field input,
 .quick-form__field select {
   width: 100%;
   font-family: inherit;
-  font-size: 16px;
-  color: var(--text);
-  background: #ffffff;
-  border: 1px solid var(--mist-deep);
-  border-radius: 10px;
-  padding: 13px 14px;
-  transition: border-color 0.2s ease;
+  font-size: 1rem;
+  color: var(--text-strong);
+  background: var(--surface-soft);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 13px 16px;
+  min-height: 50px;
+  transition: border-color var(--transition), background-color var(--transition),
+    box-shadow var(--transition);
 }
 
 .quick-form__field input::placeholder {
-  color: #998d96;
+  color: var(--text-soft);
 }
 
 .quick-form__field input:hover,
 .quick-form__field select:hover {
-  border-color: var(--plum-soft);
+  border-color: var(--color-plum-soft);
 }
 
 .quick-form__field input:focus-visible,
 .quick-form__field select:focus-visible {
-  border-color: var(--plum);
-  outline-offset: 1px;
+  background: #ffffff;
+  border-color: var(--color-plum);
+  box-shadow: 0 0 0 4px var(--color-rose-wash);
+  outline: none;
 }
 
 .quick-form__submit {
@@ -75,7 +80,7 @@
 
 .quick-form__disclaimer {
   font-size: var(--fs-small);
-  color: var(--text-muted);
+  color: var(--text-medium);
 }
 
 @media (max-width: 900px) {
@@ -83,6 +88,7 @@
     grid-template-columns: 1fr;
     gap: 28px;
     padding: 32px 24px;
+    border-radius: var(--radius-lg);
   }
 }
 

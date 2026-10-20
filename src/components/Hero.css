@@ -1,64 +1,115 @@
 .hero {
-  background: var(--mist);
-  overflow: hidden;
+  background: var(--color-cream);
+  overflow-x: clip;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__inner {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 72px;
+  gap: 64px;
   align-items: center;
-  padding-top: 72px;
-  padding-bottom: 80px;
+  padding-top: 64px;
+  padding-bottom: 72px;
 }
 
 .hero__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
   font-size: var(--fs-small);
   font-weight: 600;
-  color: var(--gold-text);
+  color: var(--color-plum-soft);
   margin-bottom: 24px;
+}
+
+/* Pequeno anel: o mesmo desenho do óvulo que emoldura o retrato */
+.hero__kicker::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--color-rose);
+  flex-shrink: 0;
 }
 
 .hero__title {
   font-size: var(--fs-h1);
-  line-height: 1.04;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: -0.025em;
   margin-bottom: 28px;
+  max-width: 17em;
 }
 
 .hero__subtitle {
   font-size: var(--fs-lead);
-  line-height: 1.6;
-  color: var(--text-muted);
-  max-width: 30em;
+  line-height: 1.65;
+  color: var(--text-medium);
+  max-width: 31em;
   margin-bottom: 40px;
 }
 
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
 }
 
-/* ---------- Retrato oval + anel ---------- */
+/* Entrada: cada parte sobe em sequência (só CSS; sem JS também funciona) */
+.hero__text > *,
 .hero__media {
+  animation: hero-rise 0.9s var(--ease-out) both;
+}
+.hero__text > :nth-child(2) { animation-delay: 0.08s; }
+.hero__text > :nth-child(3) { animation-delay: 0.16s; }
+.hero__text > :nth-child(4) { animation-delay: 0.24s; }
+.hero__media { animation-delay: 0.2s; }
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- Retrato oval + anel (o óvulo) ---------- */
+.hero__media {
+  position: relative;
   justify-self: center;
   width: 100%;
-  max-width: 420px;
+  max-width: 460px;
 }
 
 .hero__oocyte {
   position: relative;
-  padding: 18px;
+  padding: 20px;
+}
+
+/* Disco rosa-claro atrás do retrato, deslocado: dá profundidade sem sombra */
+.hero__oocyte::before {
+  content: "";
+  position: absolute;
+  inset: 4% -10% -6% 12%;
+  border-radius: 50%;
+  background: var(--color-rose-soft);
+  opacity: 0.55;
 }
 
 .hero__photo {
+  position: relative;
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 50% 22%;
   border-radius: 50%;
-  background: var(--mist-deep);
+  background: var(--color-cream-deep);
+  box-shadow: var(--shadow-soft);
 }
 
 .hero__ring {
@@ -72,26 +123,25 @@
 
 .hero__ring ellipse {
   fill: none;
-  stroke: var(--gold);
-  stroke-width: 1.5;
-  vector-effect: non-scaling-stroke;
+  stroke: var(--color-plum-soft);
+  stroke-width: 0.5; /* unidades do viewBox (≈2px): escala junto com o retrato */
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
-  animation: ring-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.3s forwards;
+  animation: ring-draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) 0.4s forwards;
 }
 
 /* Pequeno corpúsculo polar encostado no anel */
 .hero__polar-body {
   position: absolute;
-  top: 11%;
-  right: 8%;
-  width: 22px;
-  height: 22px;
+  top: 10%;
+  right: 6%;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  border: 1.5px solid var(--gold);
-  background: var(--mist);
+  border: 2px solid var(--color-plum-soft);
+  background: var(--color-cream);
   opacity: 0;
-  animation: polar-in 0.6s ease 1.9s forwards;
+  animation: polar-in 0.6s ease 2s forwards;
 }
 
 @keyframes ring-draw {
@@ -115,46 +165,92 @@
   }
 }
 
+/* Legenda vira um cartão que repousa sobre a base do retrato */
 .hero__caption {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   gap: 2px;
-  margin-top: 20px;
+  width: max-content;
+  max-width: calc(100% - 24px);
+  margin: -34px 0 0 auto;
+  padding: 14px 22px;
+  background: var(--surface-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-float);
 }
 
 .hero__caption strong {
   font-family: var(--font-display);
-  font-weight: 400;
-  font-size: var(--fs-h3);
-  color: var(--plum-ink);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  color: var(--color-plum-deep);
 }
 
 .hero__caption span {
-  font-size: var(--fs-small);
-  color: var(--text-muted);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--text-medium);
 }
 
-/* ---------- Formulário ---------- */
+/* ---------- Formulário: cartão que atravessa a divisa com a próxima seção ---------- */
 .hero__form-wrap {
-  padding-bottom: 88px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: -72px;
   scroll-margin-top: 96px;
 }
 
-@media (max-width: 900px) {
+.hero + .section {
+  padding-top: calc(var(--section-padding) + 72px);
+}
+
+@media (max-width: 1000px) {
   .hero__inner {
     grid-template-columns: 1fr;
-    gap: 48px;
-    padding-top: 48px;
+    gap: 40px;
+    padding-top: 40px;
     padding-bottom: 56px;
   }
 
   .hero__media {
-    max-width: 300px;
+    max-width: 340px;
+  }
+
+  .hero__title {
+    max-width: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero__inner {
+    padding-top: 28px;
+    padding-bottom: 44px;
+    gap: 28px;
+  }
+
+  .hero__media {
+    max-width: 260px;
+  }
+
+  .hero__caption {
+    margin-top: -28px;
+    padding: 12px 18px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 32px;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
   }
 
   .hero__form-wrap {
-    padding-bottom: 64px;
+    margin-bottom: -48px;
+  }
+
+  .hero + .section {
+    padding-top: calc(var(--section-padding) + 48px);
   }
 }

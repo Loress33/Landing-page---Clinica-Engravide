@@ -5,15 +5,14 @@
   gap: 32px;
 }
 
-/* Linha dourada que liga os embriões */
+/* Fio pontilhado que liga os embriões, de uma célula até a mórula */
 .steps__timeline::before {
   content: "";
   position: absolute;
-  top: 44px;
-  left: 44px;
-  right: 10%;
-  height: 1px;
-  background: var(--gold);
+  top: 48px;
+  left: 48px;
+  right: 6%;
+  border-top: 3px dotted var(--color-rose);
 }
 
 .steps__item {
@@ -22,29 +21,36 @@
 
 .steps__embryo {
   position: relative;
-  width: 88px;
-  height: 88px;
+  width: 96px;
+  height: 96px;
   margin-bottom: 28px;
-  background: var(--porcelain);
+  background: var(--color-cream);
   border-radius: 50%;
+  box-shadow: 0 0 0 8px var(--surface-page);
+  transition: transform 0.5s var(--ease-out), background-color var(--transition);
+}
+
+.steps__item:hover .steps__embryo {
+  transform: scale(1.07) rotate(6deg);
+  background: var(--color-rose-wash);
 }
 
 .steps__zona {
   fill: none;
-  stroke: var(--gold);
-  stroke-width: 1.2;
+  stroke: var(--color-rose);
+  stroke-width: 1.6;
 }
 
 .steps__cell {
-  fill: var(--mist);
-  stroke: var(--plum);
+  fill: var(--color-rose-soft);
+  stroke: var(--color-plum);
   stroke-width: 1.1;
 }
 
 .steps__label {
   font-size: var(--fs-small);
-  font-weight: 600;
-  color: var(--gold-text);
+  font-weight: 700;
+  color: var(--color-plum-soft);
   margin-bottom: 8px;
 }
 
@@ -54,8 +60,14 @@
 }
 
 .steps__body p:not(.steps__label) {
-  font-size: 16px;
-  color: var(--text-muted);
+  font-size: 1rem;
+  color: var(--text-medium);
+}
+
+@media (max-width: 1100px) {
+  .steps__timeline {
+    gap: 24px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -66,24 +78,25 @@
   }
 
   .steps__timeline::before {
-    top: 36px;
-    bottom: 36px;
-    left: 36px;
+    top: 40px;
+    bottom: 40px;
+    left: 40px;
     right: auto;
-    width: 1px;
     height: auto;
+    border-top: 0;
+    border-left: 3px dotted var(--color-rose);
   }
 
   .steps__item {
     display: grid;
-    grid-template-columns: 72px minmax(0, 1fr);
+    grid-template-columns: 80px minmax(0, 1fr);
     gap: 24px;
     align-items: start;
   }
 
   .steps__embryo {
-    width: 72px;
-    height: 72px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 0;
   }
 

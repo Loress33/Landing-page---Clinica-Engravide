@@ -1,17 +1,77 @@
 .services__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0 48px;
+  gap: 24px;
+}
+
+/* Ritmo de bloco: três cartões ocupam duas colunas e quebram a repetição */
+.services__item:nth-child(1),
+.services__item:nth-child(4),
+.services__item:nth-child(9) {
+  grid-column: span 2;
 }
 
 .services__item {
-  padding: 32px 0 44px;
-  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  padding: 32px 30px 36px;
+  background: var(--color-cream);
+  border-radius: var(--radius-xl);
+  transition: transform var(--transition), box-shadow var(--transition),
+    background-color var(--transition);
 }
 
+.services__item:hover {
+  transform: translateY(-5px);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Ícone dentro de um anel — a mesma "zona pelúcida" do retrato e da jornada */
 .services__icon {
-  color: var(--gold);
-  margin-bottom: 20px;
+  box-sizing: content-box;
+  flex-shrink: 0;
+  padding: 13px;
+  margin-bottom: 24px;
+  color: var(--color-plum);
+  background: var(--surface-card);
+  border: 2px solid var(--color-rose);
+  border-radius: 50%;
+  transition: background-color var(--transition), color var(--transition),
+    transform 0.4s var(--ease-out);
+}
+
+.services__item:hover .services__icon {
+  background: var(--color-plum);
+  color: #ffffff;
+  transform: rotate(-8deg) scale(1.05);
+}
+
+/* Primeiro cartão em destaque: a investigação é a porta de entrada */
+.services__item:nth-child(1) {
+  background: var(--color-plum);
+}
+
+.services__item:nth-child(1):hover {
+  background: var(--color-plum-deep);
+}
+
+.services__item:nth-child(1) h3 {
+  color: #ffffff;
+}
+
+.services__item:nth-child(1) p {
+  color: var(--text-on-dark-muted);
+}
+
+.services__item:nth-child(1) .services__icon {
+  background: var(--color-cream);
+  border-color: var(--color-rose-soft);
+}
+
+.services__item:nth-child(1):hover .services__icon {
+  background: var(--color-rose-soft);
+  color: var(--color-plum-deep);
 }
 
 .services__item h3 {
@@ -20,22 +80,31 @@
 }
 
 .services__item p {
-  color: var(--text-muted);
+  color: var(--text-medium);
   max-width: 28em;
 }
 
 @media (max-width: 960px) {
   .services__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
 }
 
 @media (max-width: 600px) {
   .services__grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .services__item:nth-child(1),
+  .services__item:nth-child(4),
+  .services__item:nth-child(9) {
+    grid-column: auto;
   }
 
   .services__item {
-    padding: 28px 0 32px;
+    padding: 26px 24px 30px;
+    border-radius: var(--radius-lg);
   }
 }

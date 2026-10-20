@@ -1,14 +1,58 @@
-.final-cta__inner {
+/* Painel ameixa arredondado sobre fundo claro, com os anéis do óvulo
+   escapando pelo canto: o mesmo desenho do retrato e da jornada. */
+.final-cta {
+  background: var(--surface-page);
+  padding-bottom: calc(var(--section-padding) * 0.8);
+}
+
+.final-cta__panel {
+  position: relative;
+  overflow: hidden;
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: 64px;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 56px;
   align-items: end;
+  padding: 80px 72px;
+  background: var(--surface-dark);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-float);
+}
+
+.final-cta__panel::before,
+.final-cta__panel::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--color-plum-soft);
+  pointer-events: none;
+}
+
+.final-cta__panel::before {
+  width: 420px;
+  height: 420px;
+  right: -120px;
+  top: -190px;
+}
+
+.final-cta__panel::after {
+  width: 260px;
+  height: 260px;
+  right: -40px;
+  top: -120px;
+  border-color: var(--color-rose);
+  opacity: 0.55;
+}
+
+.final-cta__title,
+.final-cta__side {
+  position: relative;
+  z-index: 1;
 }
 
 .final-cta__title {
-  font-size: var(--fs-h1);
-  line-height: 1.04;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.75rem, 1.1rem + 2.3vw, 2.75rem);
+  line-height: 1.16;
+  letter-spacing: -0.025em;
   color: var(--text-on-dark);
 }
 
@@ -21,12 +65,44 @@
 .final-cta__actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 14px;
+}
+
+.final-cta__panel .btn--primary {
+  background: var(--color-cream);
+  color: var(--color-plum-deep);
+}
+
+.final-cta__panel .btn--primary:hover {
+  background: #ffffff;
 }
 
 @media (max-width: 900px) {
-  .final-cta__inner {
+  .final-cta__panel {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 28px;
+    padding: 56px 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .final-cta__panel {
+    padding: 44px 24px;
+    border-radius: var(--radius-lg);
+  }
+
+  .final-cta__actions .btn {
+    width: 100%;
+  }
+
+  .final-cta__panel::before {
+    width: 280px;
+    height: 280px;
+    right: -110px;
+    top: -140px;
+  }
+
+  .final-cta__panel::after {
+    display: none;
   }
 }

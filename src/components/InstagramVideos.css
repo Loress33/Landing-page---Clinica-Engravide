@@ -4,29 +4,40 @@
   justify-content: space-between;
   gap: 24px 48px;
   flex-wrap: wrap;
-  margin-bottom: 64px;
+  margin-bottom: 56px;
 }
 
 .instagram-videos__head .section-header {
   margin-bottom: 0;
 }
 
-.instagram-videos__head .btn {
-  color: var(--plum-ink);
-}
-
 .instagram-videos__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 40px;
+  gap: 28px;
+}
+
+.instagram-videos__card {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 14px 30px;
+  background: var(--surface-card);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.instagram-videos__card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-soft);
 }
 
 .instagram-videos__player {
   width: 100%;
   aspect-ratio: 9 / 16;
-  border-radius: var(--radius);
+  border-radius: calc(var(--radius-xl) - 10px);
   overflow: hidden;
-  background: var(--plum-ink);
+  background: var(--color-plum-deep);
   margin-bottom: 24px;
 }
 
@@ -38,27 +49,51 @@
 
 .instagram-videos__card h3 {
   font-size: var(--fs-h3);
+  padding: 0 14px;
   margin-bottom: 10px;
 }
 
 .instagram-videos__card p {
-  font-size: 16px;
-  color: var(--text-muted);
+  font-size: 1rem;
+  padding: 0 14px;
+  color: var(--text-medium);
 }
 
 @media (max-width: 900px) {
   .instagram-videos__grid {
+    gap: 16px;
+  }
+
+  .instagram-videos__card h3 {
+    font-size: 1.0625rem;
+  }
+
+  .instagram-videos__card h3,
+  .instagram-videos__card p {
+    padding: 0 6px;
+  }
+
+  .instagram-videos__head {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .instagram-videos__grid {
     grid-template-columns: none;
     grid-auto-flow: column;
     grid-auto-columns: min(78%, 300px);
-    gap: 20px;
+    gap: 16px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding-bottom: 12px;
+    padding: 6px var(--gutter) 24px;
     margin: 0 calc(var(--gutter) * -1);
-    padding-left: var(--gutter);
-    padding-right: var(--gutter);
     scroll-padding: 0 var(--gutter);
+    scrollbar-width: none;
+  }
+
+  .instagram-videos__grid::-webkit-scrollbar {
+    display: none;
   }
 
   .instagram-videos__card {
@@ -66,6 +101,6 @@
   }
 
   .instagram-videos__head {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
 }

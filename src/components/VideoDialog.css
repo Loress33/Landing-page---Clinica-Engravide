@@ -1,0 +1,47 @@
+.player {
+  margin: auto;
+  border: 0;
+  padding: 0;
+  background: var(--ink);
+  color: var(--field-ink);
+  max-width: min(92vw, 560px);
+  max-height: 94svh;
+}
+
+.player::backdrop {
+  background: rgba(53, 26, 43, 0.86);
+}
+
+.player[open] {
+  animation: player-in 0.36s var(--ease-out) both;
+}
+
+@keyframes player-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+}
+
+.player__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.player__video {
+  width: 100%;
+  max-height: calc(94svh - 72px);
+  background: #000;
+}
+
+.player__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 8px 8px 20px;
+}
+
+.player__bar .btn {
+  min-height: 48px;
+}
